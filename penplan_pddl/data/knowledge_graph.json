@@ -1,0 +1,85 @@
+{
+  "nodes": [
+    {
+      "id": "recon_active_scanning",
+      "name": "Active Scanning",
+      "type": "technique",
+      "tactic": "Reconnaissance",
+      "description": "Probe external services to enumerate exposure and gather preliminary intelligence.",
+      "relevance": 0.9
+    },
+    {
+      "id": "initial_access_spearphishing",
+      "name": "Spearphishing Attachment",
+      "type": "technique",
+      "tactic": "Initial Access",
+      "description": "Deliver tailored payloads through trusted communications channels.",
+      "relevance": 0.86
+    },
+    {
+      "id": "defense_evasion_obfuscated_files",
+      "name": "Obfuscated/Compressed Files",
+      "type": "technique",
+      "tactic": "Defense Evasion",
+      "description": "Encode payloads to bypass detection while transiting defensive layers.",
+      "relevance": 0.74
+    },
+    {
+      "id": "execution_command_shell",
+      "name": "Command Shell",
+      "type": "technique",
+      "tactic": "Execution",
+      "description": "Execute payloads and tooling from interactive shells.",
+      "relevance": 0.81
+    },
+    {
+      "id": "privilege_escalation_token_impersonation",
+      "name": "Access Token Manipulation",
+      "type": "technique",
+      "tactic": "Privilege Escalation",
+      "description": "Impersonate privileged principals using stolen or forged tokens.",
+      "relevance": 0.79
+    },
+    {
+      "id": "command_control_web_service",
+      "name": "Web Service",
+      "type": "technique",
+      "tactic": "Command and Control",
+      "description": "Operate command channels through resilient web service endpoints.",
+      "relevance": 0.71
+    },
+    {
+      "id": "collection_credential_dumping",
+      "name": "Credential Dumping",
+      "type": "technique",
+      "tactic": "Collection",
+      "description": "Harvest credentials for reuse and expanded lateral movement.",
+      "relevance": 0.77
+    },
+    {
+      "id": "persistence_cloud_accounts",
+      "name": "Cloud Account",
+      "type": "technique",
+      "tactic": "Persistence",
+      "description": "Maintain cloud presence by registering resilient service principals.",
+      "relevance": 0.76
+    },
+    {
+      "id": "impact_data_exfiltration",
+      "name": "Data Exfiltration",
+      "type": "technique",
+      "tactic": "Exfiltration",
+      "description": "Transfer collected data to operator-controlled infrastructure.",
+      "relevance": 0.69
+    }
+  ],
+  "edges": [
+    {"source": "recon_active_scanning", "target": "initial_access_spearphishing", "relation": "enables"},
+    {"source": "initial_access_spearphishing", "target": "execution_command_shell", "relation": "sets_up"},
+    {"source": "execution_command_shell", "target": "privilege_escalation_token_impersonation", "relation": "leads_to"},
+    {"source": "privilege_escalation_token_impersonation", "target": "collection_credential_dumping", "relation": "supports"},
+    {"source": "execution_command_shell", "target": "command_control_web_service", "relation": "requires"},
+    {"source": "command_control_web_service", "target": "impact_data_exfiltration", "relation": "facilitates"},
+    {"source": "privilege_escalation_token_impersonation", "target": "persistence_cloud_accounts", "relation": "enables"}
+  ]
+}

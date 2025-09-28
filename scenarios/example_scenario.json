@@ -1,0 +1,9 @@
+{
+  "mission": "Validate resilience of payment processing cluster",
+  "target_asset": "PCI segment web gateway",
+  "constraints": ["maintain operational continuity", "avoid service downtime"],
+  "threats": ["ransomware operators", "credential theft campaigns"],
+  "initial_facts": ["environment_profiled"],
+  "goal_facts": ["report_drafted", "c2_channel_staged"],
+  "report_focus": "business impact and layered mitigations"
+}
