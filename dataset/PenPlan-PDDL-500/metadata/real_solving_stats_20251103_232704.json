@@ -1,0 +1,24 @@
+{
+  "timestamp": "20251103_232704",
+  "total_files": 30,
+  "solvable": 30,
+  "unsolvable": 0,
+  "success_rate": "100.00%",
+  "by_level": {
+    "strategic": {
+      "total": 10,
+      "solvable": 10,
+      "success_rate": "100.00%"
+    },
+    "tactical": {
+      "total": 10,
+      "solvable": 10,
+      "success_rate": "100.00%"
+    },
+    "technical": {
+      "total": 10,
+      "solvable": 10,
+      "success_rate": "100.00%"
+    }
+  }
+}

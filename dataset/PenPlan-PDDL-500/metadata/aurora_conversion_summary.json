@@ -1,0 +1,256 @@
+{
+  "timestamp": "2025-11-03T21:58:14.239358",
+  "total_converted": 50,
+  "scenarios": [
+    {
+      "scenario_id": "scenario_1315",
+      "aurora_name": "100",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1316",
+      "aurora_name": "101",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1317",
+      "aurora_name": "102",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1318",
+      "aurora_name": "103",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1319",
+      "aurora_name": "104",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1320",
+      "aurora_name": "105",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1321",
+      "aurora_name": "106",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1322",
+      "aurora_name": "107",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1323",
+      "aurora_name": "108",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1324",
+      "aurora_name": "109",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1325",
+      "aurora_name": "10_RoyalRansomware",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1326",
+      "aurora_name": "110",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1327",
+      "aurora_name": "111",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1328",
+      "aurora_name": "112",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1329",
+      "aurora_name": "113",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1330",
+      "aurora_name": "114",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1331",
+      "aurora_name": "115",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1332",
+      "aurora_name": "116",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1333",
+      "aurora_name": "117",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1334",
+      "aurora_name": "118",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1335",
+      "aurora_name": "119",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1336",
+      "aurora_name": "11_DeputydogCampaign",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1337",
+      "aurora_name": "120",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1338",
+      "aurora_name": "121",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1339",
+      "aurora_name": "122",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1340",
+      "aurora_name": "123",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1341",
+      "aurora_name": "124",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1342",
+      "aurora_name": "125",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1343",
+      "aurora_name": "126",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1344",
+      "aurora_name": "127",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1345",
+      "aurora_name": "128",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1346",
+      "aurora_name": "129",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1347",
+      "aurora_name": "12_DustySkyCampaign",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1348",
+      "aurora_name": "130",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1349",
+      "aurora_name": "131",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1350",
+      "aurora_name": "132",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1351",
+      "aurora_name": "133",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1352",
+      "aurora_name": "134",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1353",
+      "aurora_name": "135",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1354",
+      "aurora_name": "136",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1355",
+      "aurora_name": "137",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1356",
+      "aurora_name": "138",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1357",
+      "aurora_name": "139",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1358",
+      "aurora_name": "13_TrickLoadSpywareCampaign",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1359",
+      "aurora_name": "140",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1360",
+      "aurora_name": "141",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1361",
+      "aurora_name": "142",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1362",
+      "aurora_name": "143",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1363",
+      "aurora_name": "144",
+      "files_generated": 3
+    },
+    {
+      "scenario_id": "scenario_1364",
+      "aurora_name": "145",
+      "files_generated": 3
+    }
+  ]
+}

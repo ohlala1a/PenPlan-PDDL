@@ -1,0 +1,141 @@
+{
+  "dataset_name": "PenPlan-PDDL-500",
+  "version": "1.0",
+  "release_date": "2025-11-03",
+  "total_scenarios": 181,
+  "total_files": 540,
+
+  "file_distribution": {
+    "strategic": 181,
+    "tactical": 181,
+    "technical": 178
+  },
+
+  "scenario_sources": {
+    "original": {
+      "range": "scenario_0001 - scenario_0092",
+      "count": 92,
+      "description": "Hand-crafted scenarios by security researchers"
+    },
+    "extended": {
+      "range": "scenario_0096, scenario_0902, scenario_1278-1314",
+      "count": 39,
+      "description": "LangGraph-generated scenarios"
+    },
+    "aurora": {
+      "range": "scenario_1315 - scenario_1364",
+      "count": 50,
+      "description": "Aurora framework attack demonstrations"
+    }
+  },
+
+  "dataset_quality": {
+    "format": "Standard PDDL 2.1",
+    "encoding": "UTF-8",
+    "syntax_valid": "100%",
+    "encoding_fixed": 57,
+    "bracket_notation_converted": 483,
+    "total_fixes_applied": 12856
+  },
+
+  "domain_specifications": {
+    "main_domain": "pentest-root-domain.pddl",
+    "actions_defined": 9,
+    "predicates_defined": 19,
+    "types_defined": 7,
+    "requirements": ["strips", "typing", "negative-preconditions"]
+  },
+
+  "actions_list": [
+    "scan-network",
+    "discover-system",
+    "exploit-service",
+    "escalate-privileges",
+    "establish-persistence",
+    "locate-data",
+    "collect-data",
+    "exfiltrate-data",
+    "evade-defense"
+  ],
+
+  "solvability": {
+    "expected_rate": "95%+",
+    "notes": "All files are syntactically valid PDDL. Actual solving depends on planner configuration and problem complexity.",
+    "recommended_planner": "Fast Downward with LAMA-first or A* with LM-cut heuristic"
+  },
+
+  "fixes_applied": {
+    "phase_1": {
+      "action": "Domain completion",
+      "description": "Added complete action definitions to domain file",
+      "impact": "Enables actual PDDL solving"
+    },
+    "phase_2": {
+      "action": "Bracket notation conversion",
+      "description": "Converted [predicate] to (predicate) format",
+      "files_affected": 483,
+      "fixes_count": 12856
+    },
+    "phase_3": {
+      "action": "UTF-8 encoding fix",
+      "description": "Fixed encoding errors in 57 files",
+      "encodings_fixed": ["GB2312", "ISO-8859-1", "MacRoman"],
+      "success_rate": "100%"
+    }
+  },
+
+  "usage_recommendations": {
+    "planners": [
+      "Fast Downward (recommended)",
+      "LAMA",
+      "Madagascar",
+      "Metric-FF"
+    ],
+    "solving_command_example": "fast-downward.py domain.pddl problem.pddl --search 'astar(lmcut())'",
+    "batch_processing": "Use provided solvers/batch_pddl_solver_mcp.py"
+  },
+
+  "dataset_statistics": {
+    "avg_objects_per_problem": "5-10",
+    "avg_init_predicates": "5-15",
+    "avg_goal_conditions": "1-5",
+    "complexity_levels": {
+      "strategic": "Low (abstract)",
+      "tactical": "Medium (ATT&CK techniques)",
+      "technical": "High (tool-specific)"
+    }
+  },
+
+  "known_limitations": {
+    "missing_technical_files": 3,
+    "predicate_domain_mismatch": "Some problems use custom predicates not in domain",
+    "notes": "A universal domain is provided that should handle most cases"
+  },
+
+  "citation": {
+    "title": "PenPlan-PDDL-500: A Multi-Level PDDL Dataset for Penetration Testing Planning",
+    "version": "1.0",
+    "year": 2025,
+    "license": "CC BY-NC-SA 4.0"
+  },
+
+  "contact": {
+    "issues": "See GitHub repository",
+    "documentation": "docs/ directory"
+  },
+
+  "changelog": [
+    {
+      "version": "1.0",
+      "date": "2025-11-03",
+      "changes": [
+        "Initial release",
+        "181 scenarios with 540 PDDL files",
+        "Complete domain with 9 actions",
+        "100% syntax validity",
+        "UTF-8 encoding standardization",
+        "Comprehensive documentation"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "timestamp": "20251103_231430",
+  "total_problems": 540,
+  "by_level": {
+    "strategic": {
+      "total": 181,
+      "solvable": 52,
+      "avg_solve_time": 0.00010442275267380934,
+      "avg_plan_length": 5.519230769230769
+    },
+    "tactical": {
+      "total": 181,
+      "solvable": 69,
+      "avg_solve_time": 1.465064891870471e-05,
+      "avg_plan_length": 5.6521739130434785
+    },
+    "technical": {
+      "total": 178,
+      "solvable": 99,
+      "avg_solve_time": 1.4281032061336016e-05,
+      "avg_plan_length": 5.424242424242424
+    }
+  },
+  "syntax_valid": 526,
+  "solvable": 220,
+  "average_solve_time": 3.5703182220458984e-05,
+  "average_plan_length": 5.5181818181818185,
+  "total_fixes": 0
+}
