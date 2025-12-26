@@ -33,25 +33,38 @@ pyproject.toml                    # Packaging metadata
 
 ## Installation
 
-The code targets Python 3.9+ and depends only on the Python standard library.
-To install the package in editable mode:
+### Requirements
+
+- Python 3.9+
+- Fast-Downward planner (for PDDL solving)
+
+### Quick Install
 
 ```bash
+# Clone repository
+git clone https://github.com/ohlala1a/PenPlan-PDDL.git
+cd PenPlan-PDDL
+
+# Create virtual environment
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
+
+# Install package
 pip install -e .
 ```
 
-## Quick Start
-
-Run the included scenario through the pipeline:
+### Install Fast-Downward (Required for PDDL Solving)
 
 ```bash
-python -m penplan_pddl.cli
+# Ubuntu/Debian
+sudo apt-get install fast-downward
+
+# Or build from source
+git clone https://github.com/aibasel/downward.git
+cd downward
+./build.py
 ```
 
-The CLI prints the retrieved knowledge graph context, the layered plan, and the
-result of PDDL verification. A non-zero exit code indicates that validation failed.
 
 ## Programmatic Usage
 
@@ -69,16 +82,6 @@ for step in result.plan.steps:
 assert result.report.success
 ```
 
-## Testing
-
-The repository ships with a lightweight regression test:
-
-```bash
-pytest
-```
-
-The test ensures the generated plan complies with validation and stays within the
-configured plan length budget.
 
 ## License
 
